@@ -1,0 +1,1 @@
+The following font family is Open Sans: https://fonts.google.com/specimen/Open+Sans
