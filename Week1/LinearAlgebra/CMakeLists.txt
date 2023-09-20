@@ -41,9 +41,21 @@ set(LIBRARIES
 )
 
 function(add_executable_rtg name)
+    set(SHADER_LIST)
+    if(${ARGC} GREATER 1)
+        list(SUBLIST ARGV 1 -1 EXTRA_ARGS)
+        foreach(ARG ${EXTRA_ARGS})
+            list(APPEND SHADER_LIST ${PROJECT_SOURCE_DIR}/shaders/${ARG})
+        endforeach()
+    endif()
+
+
     add_executable(${name}
         ${name}.cpp
-        ${HEADERS})
+        ${HEADERS}
+	${SHADER_LIST})
+
+    source_group(Shaders FILES ${SHADER_LIST})
 
     target_link_libraries(${name} ${LIBRARIES})
 
@@ -55,7 +67,7 @@ endfunction()
 add_executable_rtg(tut_00_eigen_basics)
 add_executable_rtg(tut_01_multiplication_inverses)
 add_executable_rtg(tut_02_dot_cross_products)
-add_executable_rtg(ex_00_transformations)
-add_executable_rtg(ex_01_transforming_normals)
-add_executable_rtg(ex_02_surfel_cloud)
-add_executable_rtg(ex_03_mesh_normals)
+add_executable_rtg(ex_00_transformations Wireframe.vert Wireframe.geom Wireframe.frag)
+add_executable_rtg(ex_01_transforming_normals DrawNormalsSetNormMat.vert DrawNormals.geom DrawNormals.frag Gooch.vert Gooch.frag)
+add_executable_rtg(ex_02_surfel_cloud DrawNormals.vert DrawNormals.geom DrawNormals.frag Gooch.vert Gooch.frag)
+add_executable_rtg(ex_03_mesh_normals DrawNormals.vert DrawNormals.geom DrawNormals.frag Gooch.vert Gooch.frag)
