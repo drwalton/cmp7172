@@ -1,1 +1,4 @@
 build/
+images/car_gaussblur.jpg
+images/car_bilateral.jpg
+images/car_median.jpg
