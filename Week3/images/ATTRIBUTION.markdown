@@ -1,0 +1,1 @@
+Hair texture from [these free textures](https://www.deviantart.com/draconianrain/journal/Free-Textures-370552297)
