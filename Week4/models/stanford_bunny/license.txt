@@ -1,0 +1,11 @@
+Model Information:
+* title:	Stanford bunny
+* source:	https://sketchfab.com/3d-models/stanford-bunny-883eec40ad724aeab2f3ca101420db33
+* author:	001comic (https://sketchfab.com/001comic)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Stanford bunny" (https://sketchfab.com/3d-models/stanford-bunny-883eec40ad724aeab2f3ca101420db33) by 001comic (https://sketchfab.com/001comic) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
