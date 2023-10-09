@@ -9,6 +9,7 @@
 #include "glhelper/FlyViewer.hpp"
 #include "glhelper/Mesh.hpp"
 #include "glhelper/Texture.hpp"
+#include "glhelper/Matrices.hpp"
 #include "assimp/Importer.hpp"
 #include "assimp/postprocess.h"
 #include "assimp/mesh.h"
@@ -65,13 +66,6 @@ void loadMesh(glhelper::Mesh* mesh, const std::string &filename)
 	mesh->norm(norms);
 	mesh->elems(elems);
 	mesh->tex(uvs);
-}
-
-Eigen::Matrix4f makeTranslationMatrix(const Eigen::Vector3f& translate)
-{
-	Eigen::Matrix4f matrix = Eigen::Matrix4f::Identity();
-	matrix.block<3, 1>(0, 3) = translate;
-	return matrix;
 }
 
 int main()
