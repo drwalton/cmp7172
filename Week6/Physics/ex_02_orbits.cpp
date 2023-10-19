@@ -209,7 +209,8 @@ int main()
 			// square law.
 
 			// Optional extra task - make the planet a dynamic object (set its mass to planetMass)
-			// and apply the gravitational force to it too. Does it move visibly? If not, why not?
+			// and apply the gravitational force to it too. The moon and planet should now rotate
+			// around their common centre of mass. Does the planet orbit as well?
 
 
 
@@ -234,7 +235,7 @@ int main()
 
 			glDisable(GL_CULL_FACE);
 			glProgramUniform4f(lambertianShader.get(), lambertianShader.uniformLoc("color"), 0.f, 1.0f, 0.1f, 1.f);
-			sphereMesh.modelToWorld(planetScale);
+			sphereMesh.modelToWorld(getRigidBodyTransform(world.get(), 0) * planetScale);
 			sphereMesh.render();
 			glProgramUniform4f(lambertianShader.get(), lambertianShader.uniformLoc("color"), 0.8f, 0.2f, 0.2f, 1.f);
 			sphereMesh.modelToWorld(getRigidBodyTransform(world.get(), 1) * moonScale);
