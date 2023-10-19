@@ -200,8 +200,7 @@ int main()
 			world->stepSimulation(desiredFrametime / 1000.f, 10);
 
 			// Calculate gravity here.
-			// Find the position of your moon using getRigidBodyTransform
-			// the planet is fixed at (0,0,0).
+			// Find the position of your moon and planet using getWorldTransform
 			// Use this to get a direction vector for your gravity force.
 			// To get the magnitude use the gravity formula above.
 			// If you add this first, you can check the moon falls in towards the planet.
