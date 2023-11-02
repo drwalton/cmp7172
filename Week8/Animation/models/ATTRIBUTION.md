@@ -1,0 +1,1 @@
+Animated chick model by FourthGreen@Sketchfab [link](https://sketchfab.com/3d-models/animated-chick-8fffaef7902c4823834dd783a99c4316).
