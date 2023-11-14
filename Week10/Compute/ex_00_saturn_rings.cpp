@@ -110,7 +110,7 @@ int main()
 	SDL_GL_SetAttribute(SDL_GL_MULTISAMPLESAMPLES, 4);
 
 	// Prepare window1.f, 1.f, 1.f, 1.f
-	SDL_Window* window = SDL_CreateWindow("Geometry Shader-Based Fire Exercise", 50, 50, winWidth, winHeight, SDL_WINDOW_OPENGL);
+	SDL_Window* window = SDL_CreateWindow("Compute Shader-Based Particle System Exercise", 50, 50, winWidth, winHeight, SDL_WINDOW_OPENGL);
 	SDL_GLContext context = SDL_GL_CreateContext(window);
 
 	GLenum result = glewInit();
