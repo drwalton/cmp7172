@@ -1,0 +1,55 @@
+{
+    "meshes": 
+    [
+        {
+            "name": "sphere",
+            "filename": "../models/sphere.obj"
+        }
+    ],
+
+    "shaders":
+    [
+        {
+            "name": "texturedMesh",
+            "filenames": ["../shaders/texturedMesh.vert", "../shaders/texturedMesh.frag"]
+        }
+    ],
+
+    "textures":
+    [
+        {
+            "name": "saturn",
+            "filename": "../images/2k_saturn.jpg"
+        }
+
+    ],
+
+    "models":
+    [
+        {
+            "name": "saturn0",
+            "mesh": "sphere",
+            "position": [0, 0, 0],
+            "shader": "texturedMesh",
+            "texture": "saturn"
+        },
+
+        {
+            "name": "saturn1",
+            "mesh": "sphere",
+            "position": [4, 0, 0],
+            "shader": "texturedMesh",
+            "texture": "saturn"
+        },
+
+        {
+            "name": "saturn2",
+            "mesh": "sphere",
+            "position": [0, 0, 4],
+            "shader": "texturedMesh",
+            "texture": "saturn"
+        }
+
+    ]
+
+}
